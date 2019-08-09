@@ -28,6 +28,20 @@ class Organization
   field:aberdeen_it_spend	,type:Integer
   field:aberdeen_it_spend_currency,type:String
   field:aberdeen_it_spend_currency_usd,type:Integer
-
-
+  private
+  def self.ConvertToRelatedSymbol(text)
+  if text=="greater_than_or_equal_to"
+    text="gte"
+  elsif text=="less_than_or_equal_to"
+    text="lte"
+  elsif text=="equal_to"
+    text="eq"
+  elsif text=="before"
+    text="lt"
+  elsif text=="after"
+  text="gt"
+  elsif text=="does_not_equal_to"
+  text="ne"
 end
+end
+  end
