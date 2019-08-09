@@ -22,7 +22,6 @@ class Organization
   field:similarweb_monthly_visits_growth,type:String
   field:siftery_total_product_active,type:Integer
   field:siftery_total_product_changes,type:String
-
   field:apptopia_number_of_apps,type:Integer
   field:apptopia_downloads,type:Integer
   field:builtwith_Active_tech_count,type:Integer
